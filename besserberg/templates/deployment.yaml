@@ -24,7 +24,7 @@ spec:
       volumes:
         - name: "{{ .Values.volume.name }}"
           configMap:
-            name: "{{ .Values.configmap.name }}"
+            name: {{ template "fullname" . }}
             items:
             - key: "{{ .Values.configmap.key }}"
               path: "{{ .Values.configmap.path }}"

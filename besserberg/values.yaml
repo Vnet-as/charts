@@ -14,6 +14,5 @@ service:
 volume:
   name: besserberg-vol
 configmap:
-  name: besserberg-cm
   key: nginx.conf
   path: nginx.conf
