@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  besserberg:
+  - apiVersion: v1
+    created: 2017-03-01T15:01:59.091793288+01:00
+    description: A Helm chart for Kubernetes
+    digest: c6c2b304e529abde18dd0bd43904157106f061bd87b19e3c187b6278336652fb
+    name: besserberg
+    urls:
+    - https://vnet-as.github.io/charts/besserberg-0.1.0.tgz
+    version: 0.1.0
+generated: 2017-03-01T15:01:59.090756308+01:00
