@@ -8,6 +8,9 @@ spec:
   type: {{ .Values.service.type }}
   ports:
   - port: {{ .Values.service.externalPort }}
+    {{ if .Values.service.nodePort }}
+    nodePort: {{ .Values.service.nodePort }}
+    {{ end }}
     targetPort: {{ .Values.service.internalPort }}
     protocol: TCP
     name: {{ .Values.service.name }}
