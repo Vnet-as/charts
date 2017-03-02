@@ -39,7 +39,7 @@ johannes-besserberg-1832809726-3hzsr   2/2       Running   0          1m
 
 ## Values
 
-By default service type is set to `ClusterIP` which can be overrided by `service.type` value.
+By default service type is set to `ClusterIP` which can be overridden by `service.type` value.
 
 ```bash
 $ helm install --set service.type=NodePort vnet/besserberg
