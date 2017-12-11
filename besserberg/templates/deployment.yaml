@@ -13,18 +13,5 @@ spec:
     spec:
       containers:
         - name: besserberg
-          image: vnet/besserberg
+          image: vnet/besserberg:1.0.0
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-        - name: nginx
-          image: nginx
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          volumeMounts:
-            - mountPath: /etc/nginx/conf.d
-              name: "{{ .Values.volume.name }}"
-      volumes:
-        - name: "{{ .Values.volume.name }}"
-          configMap:
-            name: {{ template "fullname" . }}
-            items:
-            - key: "{{ .Values.configmap.key }}"
-              path: "{{ .Values.configmap.path }}"

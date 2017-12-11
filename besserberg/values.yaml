@@ -1,15 +1,10 @@
 # Default values for besserberg.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-replicaCount: 1
+replicaCount: 2
 image:
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
-  externalPort: 80
-  internalPort: 80
-volume:
-  name: besserberg-vol
-configmap:
-  key: nginx.conf
-  path: nginx.conf
+  externalPort: 8000
+  internalPort: 8000
