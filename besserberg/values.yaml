@@ -6,8 +6,8 @@ image:
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
-  externalPort: 80
-  internalPort: 80
+  externalPort: 8000
+  internalPort: 8000
 volume:
   name: besserberg-vol
 configmap:
